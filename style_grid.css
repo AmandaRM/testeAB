@@ -125,40 +125,82 @@ h2{
 	}
 }
 
-pre {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #373737;
-	width: 85rem;
-	margin: 0px 100px 10px 0px;
-	background-color: #373737;
-	height: 60px
-}
-.pesquisa {
-	width: 400px;
-	height: 40px;
-	margin: -40px 10px 10px 950px;
+.dropbtn {
+    background-color: #373737 ;
+    color: white;
+    padding: 20px ;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arial'
 }
 
-#texto {
-width: 300px;
-height: 40px;
-font-family: "Arial";
-float: left;
-font-size: 18px;
+/* Hover color/focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: grey;
 }
 
-.btn {
-	width: 40px;
-	height: 40px;
-	background-color: #2f4550;
-	padding: 5px, 10px;
-	cursor: pointer;
-	margin: -100px 50px 5px -95px;
+
+/* Search field */
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 
-#texto:focus{
-	border: solid 2px #2f4550;
+/* Focus/click on the search field */
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* Position of the dropdown container */
+
+.dropdown {
+    display: flex;
+    flex-direction: column; 
 
 }
 
+
+/*Dropdown content, to determine that it's hidden by default */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Secondary links inside the dropdown */
+
+.dropdown-content b {
+    color: white;
+    background-color: #5B5D5E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown-content b:hover {background-color: grey} 
+
+
+.show {display:block;}
